@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical"
+    tools:context=".allactivity.ReschedulsActivity">
+
+    <include
+        android:id="@+id/header"
+        layout="@layout/headertools"/>
+    <ScrollView
+        android:isScrollContainer="false"
+        android:layout_below="@+id/header"
+        android:layout_weight=".8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_margin="@dimen/margin_20"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+
+            <EditText
+                android:maxLength="50"
+                android:id="@+id/et_firstbookname"
+                android:singleLine="true"
+                android:imeOptions="actionNext"
+                android:layout_marginTop="@dimen/margin_20"
+                android:padding="10dp"
+                android:background="@drawable/buttonstyle2"
+                android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz "
+                android:layout_width="match_parent"
+                android:nextFocusDown="@+id/et_password"
+                android:inputType="text"
+                android:textColor="@color/black"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/gray"
+                android:hint="Full Name" />
+
+            <EditText
+                android:id="@+id/et_fullemail"
+                android:layout_marginTop="@dimen/margin_20"
+                android:singleLine="true"
+                android:maxLength="80"
+                android:imeOptions="actionNext"
+                android:padding="10dp"
+                android:background="@drawable/buttonstyle2"
+                android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789.@_"
+                android:layout_width="match_parent"
+                android:nextFocusDown="@+id/et_password"
+                android:inputType="textEmailAddress"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textColorHint="@color/gray"
+                android:hint="Email" />
+
+
+
+
+            <EditText
+                android:id="@+id/et_fullmobileno"
+                android:layout_marginTop="@dimen/margin_20"
+                android:singleLine="true"
+                android:maxLength="15"
+                android:imeOptions="actionNext"
+                android:padding="10dp"
+                android:background="@drawable/buttonstyle2"
+                android:layout_width="match_parent"
+                android:nextFocusDown="@+id/et_password"
+                android:inputType="number"
+                android:textColor="@color/black"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/gray"
+                android:hint="Mobile Number" />
+
+
+
+            <EditText
+                android:id="@+id/et_firstaddress"
+                android:singleLine="true"
+                android:imeOptions="actionNext"
+                android:layout_marginTop="@dimen/margin_20"
+                android:padding="10dp"
+                android:background="@drawable/buttonstyle2"
+                android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789/.,- "
+                android:layout_width="match_parent"
+                android:nextFocusDown="@+id/et_password"
+                android:inputType="text"
+                android:textColor="@color/black"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/gray"
+                android:hint="Address" />
+
+
+            <EditText
+                android:maxLength="8"
+                android:singleLine="true"
+                android:imeOptions="actionNext"
+                android:padding="10dp"
+                android:layout_marginTop="@dimen/margin_20"
+                android:id="@+id/et_zipcodecheck"
+                android:background="@drawable/buttonstyle2"
+                android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789"
+                android:layout_width="match_parent"
+                android:nextFocusDown="@+id/et_password"
+                android:inputType="number"
+                android:textColor="@color/black"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/gray"
+                android:hint="ZipCode" />
+
+
+
+            <EditText
+
+                android:singleLine="true"
+                android:imeOptions="actionNext"
+                android:padding="10dp"
+                android:layout_marginTop="@dimen/margin_20"
+                android:id="@+id/et_date"
+                android:background="@drawable/buttonstyle2"
+                android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789"
+                android:layout_width="match_parent"
+                android:nextFocusDown="@+id/et_password"
+                android:inputType="number"
+                android:textColor="@color/black"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/gray"
+                android:hint="Date" />
+
+            <EditText
+                android:maxLength="8"
+                android:singleLine="true"
+                android:imeOptions="actionDone"
+                android:padding="10dp"
+                android:layout_marginTop="@dimen/margin_20"
+                android:id="@+id/et_time"
+                android:background="@drawable/buttonstyle2"
+                android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789"
+                android:layout_width="match_parent"
+                android:nextFocusDown="@+id/et_password"
+                android:layout_marginBottom="@dimen/margin_20"
+                android:inputType="number"
+                android:textColor="@color/black"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/gray"
+                android:hint="Time" />
+
+
+
+
+        </LinearLayout>
+
+
+
+
+    </ScrollView>
+
+    <custom.RainbowTextView
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:gravity="center"
+        android:id="@+id/bt_booknow"
+        android:text="Book Now"
+        android:layout_alignParentBottom="true"
+        android:background="#000"
+        android:textSize="20sp"
+        app:colorSpace="150dp"
+        app:colorSpeed="9dp"/>
+
+</LinearLayout>

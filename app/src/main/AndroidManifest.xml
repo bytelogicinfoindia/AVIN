@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.avin.avin">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="com.avin.avin.allactivity.ContactUsActivity"></activity>
+        <activity android:name="com.avin.avin.allactivity.TermsPolicyActivity" />
+        <activity android:name="com.avin.avin.allactivity.SearchActivity" />
+        <activity android:name="com.avin.avin.allactivity.ChangePasswordActivity" />
+        <activity android:name="com.avin.avin.allactivity.OtpActivity" />
+        <activity android:name="com.avin.avin.allactivity.ReschedulsActivity" />
+        <activity android:name="com.avin.avin.allactivity.BookingActivity" />
+        <activity android:name="com.avin.avin.allactivity.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.avin.avin.allactivity.EditProfileActivity" />
+        <activity android:name="com.avin.avin.allactivity.ForgotActivity" />
+        <activity android:name="com.avin.avin.allactivity.AllServiceActivity" />
+        <activity android:name="com.avin.avin.allactivity.MainActivity" />
+        <activity android:name="com.avin.avin.allactivity.LoginActivity" />
+        <activity android:name="com.avin.avin.allactivity.RegisterActivity" />
+    </application>
+
+</manifest>

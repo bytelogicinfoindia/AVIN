@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/colorWhite"
+    android:layout_height="match_parent"
+    tools:context=".fragment.ProfileFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+
+            <include
+                layout="@layout/headertools"></include>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_margin="@dimen/margin_20"
+                android:layout_height="wrap_content">
+
+                    <RelativeLayout
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:visibility="gone"
+                        android:layout_marginTop="@dimen/margin_20"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            xmlns:app="http://schemas.android.com/apk/res-auto"
+                            android:id="@+id/profile_image"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/ic_person_black_24dp"
+                            app:civ_border_width="1dp"
+                            app:civ_border_color="@color/colorPrimary"/>
+
+                        <ImageButton
+                            android:id="@+id/add_image_profile"
+                            android:layout_width="30dp"
+                            android:src="@drawable/ic_camera_enhance_black_24dp"
+                            android:layout_marginTop="60dp"
+                            android:layout_marginLeft="70dp"
+                            android:background="@drawable/round_button"
+                            android:layout_height="30dp" />
+
+                    </RelativeLayout>
+
+
+
+                    <EditText
+                        android:maxLength="50"
+                        android:id="@+id/et_name"
+                        android:singleLine="true"
+                        android:imeOptions="actionNext"
+                        android:layout_marginTop="@dimen/margin_20"
+                        android:padding="10dp"
+                        android:background="@drawable/buttonstyle2"
+                        android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz._@ "
+                        android:layout_width="match_parent"
+                        android:nextFocusDown="@+id/et_password"
+                        android:inputType="text"
+                        android:textColor="@color/black"
+                        android:layout_height="wrap_content"
+                        android:textColorHint="@color/gray"
+                        android:hint="Full Name" />
+
+                    <EditText
+                        android:maxLength="50"
+                        android:id="@+id/et_emails"
+                        android:singleLine="true"
+                        android:imeOptions="actionNext"
+                        android:layout_marginTop="@dimen/margin_20"
+                        android:padding="10dp"
+                        android:background="@drawable/buttonstyle2"
+                        android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz "
+                        android:layout_width="match_parent"
+                        android:nextFocusDown="@+id/et_password"
+                        android:inputType="textEmailAddress"
+                        android:textColor="@color/black"
+                        android:layout_height="wrap_content"
+                        android:textColorHint="@color/gray"
+                        android:hint="emails" />
+
+                    <EditText
+                        android:maxLength="50"
+                        android:id="@+id/et_mobilenumber"
+                        android:singleLine="true"
+                        android:imeOptions="actionNext"
+                        android:layout_marginTop="@dimen/margin_20"
+                        android:padding="10dp"
+                        android:background="@drawable/buttonstyle2"
+                        android:layout_width="match_parent"
+                        android:nextFocusDown="@+id/et_password"
+                        android:inputType="phone"
+                        android:textColor="@color/black"
+                        android:layout_height="wrap_content"
+                        android:textColorHint="@color/gray"
+                        android:hint="mobile" />
+
+                    <EditText
+                        android:maxLength="50"
+                        android:id="@+id/et_address"
+                        android:singleLine="true"
+                        android:imeOptions="actionNext"
+                        android:layout_marginTop="@dimen/margin_20"
+                        android:padding="10dp"
+                        android:background="@drawable/buttonstyle2"
+                        android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789./ "
+                        android:layout_width="match_parent"
+                        android:nextFocusDown="@+id/et_password"
+                        android:inputType="textPostalAddress"
+                        android:textColor="@color/black"
+                        android:layout_height="wrap_content"
+                        android:textColorHint="@color/gray"
+                        android:hint="address" />
+
+                    <EditText
+                        android:maxLength="50"
+                        android:id="@+id/et_zipcode"
+                        android:singleLine="true"
+                        android:imeOptions="actionNext"
+                        android:layout_marginTop="@dimen/margin_20"
+                        android:padding="10dp"
+                        android:background="@drawable/buttonstyle2"
+                        android:layout_marginBottom="@dimen/margin_20"
+                        android:layout_width="match_parent"
+                        android:nextFocusDown="@+id/et_password"
+                        android:inputType="number"
+                        android:textColor="@color/black"
+                        android:layout_height="wrap_content"
+                        android:textColorHint="@color/gray"
+                        android:hint="Zipcode" />
+
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+</RelativeLayout>

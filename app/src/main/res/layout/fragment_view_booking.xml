@@ -1,0 +1,409 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.booking.ViewBookingFragment">
+
+
+    <include
+         android:id="@+id/header"
+         layout="@layout/headertools">
+
+     </include>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_below="@id/header"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:id="@+id/lldetails"
+            android:layout_margin="@dimen/margin_10"
+            android:layout_marginBottom="@dimen/margin_30"
+            android:layout_height="wrap_content">
+
+
+            <LinearLayout
+                android:weightSum="2"
+                android:layout_marginTop="@dimen/margin_10"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textSize="@dimen/margin_15"
+                    android:gravity="left"
+                    android:textStyle="bold"
+                    android:text=" "
+                    android:id="@+id/tv_fullnamehits"
+                    android:layout_weight="1.2"
+                    android:textColor="@color/black"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text=""
+                    android:id="@+id/tv_v1"
+                    android:textColor="@color/black"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:textSize="@dimen/margin_15"
+                    android:gravity="left"
+                    android:id="@+id/tv_fullnamehits1"
+                    android:layout_marginLeft="@dimen/margin_10"
+                    android:layout_weight=".8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:weightSum="2"
+                android:layout_marginTop="@dimen/margin_10"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textSize="@dimen/margin_15"
+                    android:gravity="left"
+                    android:textStyle="bold"
+                    android:id="@+id/tv_hitsfathername"
+                    android:text=" "
+                    android:layout_weight="1.2"
+                    android:textColor="@color/black"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text=""
+                    android:id="@+id/tv_v2"
+                    android:textColor="@color/black"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:textSize="@dimen/margin_15"
+                    android:gravity="left"
+                    android:id="@+id/tv_hitsfathername1"
+                    android:layout_marginLeft="@dimen/margin_10"
+                    android:layout_weight=".8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:weightSum="2"
+                android:layout_marginTop="@dimen/margin_10"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textSize="@dimen/margin_15"
+                    android:gravity="left"
+                    android:textStyle="bold"
+                    android:text=""
+                    android:id="@+id/tv_hitsmothername"
+                    android:layout_weight="1.2"
+                    android:textColor="@color/black"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text=""
+                    android:id="@+id/tv_v3"
+                    android:textColor="@color/black"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:textSize="@dimen/margin_15"
+                    android:gravity="left"
+                    android:id="@+id/tv_hitsmothername1"
+                    android:layout_marginLeft="@dimen/margin_10"
+                    android:layout_weight=".8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:weightSum="2"
+                android:layout_marginTop="@dimen/margin_10"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textSize="@dimen/margin_15"
+                    android:gravity="left"
+                    android:textStyle="bold"
+                    android:text=""
+                    android:layout_weight="1.2"
+                    android:id="@+id/tv_hitsmobileno"
+                    android:textColor="@color/black"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text=""
+                    android:id="@+id/tv_v4"
+                    android:textColor="@color/black"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:textSize="@dimen/margin_15"
+                    android:gravity="left"
+                    android:id="@+id/tv_hitsmobileno1"
+                    android:layout_marginLeft="@dimen/margin_10"
+                    android:layout_weight=".8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:weightSum="2"
+                android:layout_marginTop="@dimen/margin_10"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textSize="@dimen/margin_15"
+                    android:gravity="left"
+                    android:textStyle="bold"
+                    android:text=" "
+                    android:id="@+id/tv_hitsemail"
+                    android:layout_weight="1.2"
+                    android:textColor="@color/black"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text=""
+                    android:id="@+id/tv_v5"
+                    android:textColor="@color/black"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:textSize="@dimen/margin_15"
+                    android:gravity="left"
+                    android:id="@+id/tv_hitsemail1"
+                    android:layout_marginLeft="@dimen/margin_10"
+                    android:layout_weight=".8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:weightSum="2"
+                android:layout_marginTop="@dimen/margin_10"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textSize="@dimen/margin_15"
+                    android:gravity="left"
+                    android:id="@+id/tv_hitsgender"
+                    android:textStyle="bold"
+                    android:text=" "
+                    android:layout_weight="1.2"
+                    android:textColor="@color/black"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text=""
+                    android:id="@+id/tv_v6"
+                    android:textColor="@color/black"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:textSize="@dimen/margin_15"
+                    android:gravity="left"
+                    android:id="@+id/tv_hitsgender1"
+                    android:layout_marginLeft="@dimen/margin_10"
+                    android:layout_weight=".8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:weightSum="2"
+                android:layout_marginTop="@dimen/margin_10"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textSize="@dimen/margin_15"
+                    android:id="@+id/tv_hitesdob"
+                    android:gravity="left"
+                    android:textStyle="bold"
+                    android:text=" "
+                    android:layout_weight="1.2"
+                    android:textColor="@color/black"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text=""
+                    android:id="@+id/tv_v7"
+                    android:textColor="@color/black"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:textSize="@dimen/margin_15"
+                    android:gravity="left"
+                    android:id="@+id/tv_hitesdob1"
+                    android:layout_marginLeft="@dimen/margin_10"
+                    android:layout_weight=".8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:weightSum="2"
+                android:layout_marginTop="@dimen/margin_10"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textSize="@dimen/margin_15"
+                    android:gravity="left"
+                    android:id="@+id/tv_hitsaddress"
+                    android:textStyle="bold"
+                    android:text=" "
+                    android:layout_weight="1.2"
+                    android:textColor="@color/black"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text=""
+                    android:id="@+id/tv_v8"
+                    android:textColor="@color/black"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:textSize="@dimen/margin_15"
+                    android:gravity="left"
+                    android:id="@+id/tv_hitsaddress1"
+                    android:layout_marginLeft="@dimen/margin_10"
+                    android:layout_weight=".8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+
+                android:weightSum="2"
+                android:layout_marginTop="@dimen/margin_10"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textSize="@dimen/margin_15"
+                    android:gravity="left"
+                    android:textStyle="bold"
+                    android:text=" "
+                    android:id="@+id/tv_time"
+                    android:layout_weight="1.2"
+                    android:textColor="@color/black"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text=""
+                    android:id="@+id/tv_v12"
+                    android:textColor="@color/black"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:textSize="@dimen/margin_15"
+                    android:gravity="left"
+                    android:id="@+id/tv_time1"
+                    android:layout_marginLeft="@dimen/margin_10"
+                    android:layout_weight=".8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:visibility="gone"
+                android:weightSum="2"
+                android:layout_marginTop="@dimen/margin_10"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textSize="@dimen/margin_15"
+                    android:gravity="left"
+                    android:textStyle="bold"
+                    android:text=" "
+                    android:id="@+id/tv_hitcity"
+                    android:layout_weight="1.2"
+                    android:textColor="@color/black"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text=""
+                    android:id="@+id/tv_v9"
+                    android:textColor="@color/black"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:textSize="@dimen/margin_15"
+                    android:gravity="left"
+                    android:id="@+id/tv_hitcity1"
+                    android:layout_marginLeft="@dimen/margin_10"
+                    android:layout_weight=".8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:weightSum="2"
+                android:layout_marginTop="@dimen/margin_10"
+                android:orientation="horizontal"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textSize="@dimen/margin_15"
+                    android:gravity="left"
+                    android:textStyle="bold"
+                    android:text=" "
+                    android:id="@+id/tv_hitamount"
+                    android:layout_weight="1.2"
+                    android:textColor="@color/black"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text=""
+                    android:id="@+id/tv_v10"
+                    android:textColor="@color/black"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:textSize="@dimen/margin_15"
+                    android:gravity="left"
+                    android:id="@+id/tv_hitamount1"
+                    android:layout_marginLeft="@dimen/margin_10"
+                    android:layout_weight=".8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

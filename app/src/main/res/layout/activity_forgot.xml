@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".allactivity.ForgotActivity">
+    
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_margin="@dimen/margin_20"
+            android:layout_height="wrap_content">
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:gravity="left"
+               android:textColor="@color/black"
+               android:textSize="15dp"
+               android:text="Lost Your Password? Please enter Your mobile number. You Will receive a Password to login here "/>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/gray3"
+                android:id="@+id/et_passs"
+                app:errorEnabled="true"
+                android:layout_marginBottom="@dimen/margin_10"
+                app:passwordToggleEnabled="true"
+                app:passwordToggleTint="@color/black"
+                app:hintTextAppearance="@style/TextAppearence.App.TextInputLayout"
+                android:layout_marginTop="@dimen/margin_10">
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:drawableLeft="@drawable/ic_call_black_24dp"
+                    android:gravity="left"
+                    android:textSize="@dimen/margin_15"
+
+                    android:textStyle="bold"
+                    android:inputType="phone"
+                    android:hint="Mobile Number"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+                <custom.RainbowTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/margin_45"
+                    android:padding="10dp"
+                    android:layout_marginBottom="@dimen/margin_20"
+                    android:layout_marginTop="15dp"
+                    android:textColor="@color/colorWhite"
+                    android:background="@drawable/buttonstyle3"
+                    android:gravity="center"
+                    android:layout_marginRight="@dimen/margin_60"
+                    android:layout_marginLeft="@dimen/margin_60"
+                    android:textAllCaps="false"
+                    android:text="Forgot Password" />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/margin_10"
+                    android:gravity="center"
+                    android:id="@+id/tv_backlogin"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/margin_15"
+                    android:layout_marginBottom="@dimen/margin_20"
+                    android:textStyle="bold"
+                    android:text="Back to? Login "/>
+
+
+
+
+        </LinearLayout>
+        
+        
+        
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".allactivity.TermsPolicyActivity">
+
+    <include
+        android:id="@+id/header"
+        layout="@layout/headertools"/>
+
+    <ScrollView
+        android:isScrollContainer="false"
+        android:layout_below="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_margin="@dimen/margin_20"
+        android:layout_marginBottom="@dimen/margin_20"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_margin="@dimen/margin_10"
+                android:layout_height="match_parent">
+
+
+
+                <TextView
+                    android:gravity="center|left"
+                    android:textColor="@color/black"
+                    android:layout_gravity="left"
+                    android:id="@+id/tv_desc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/margin_15"
+                    android:text="Regd. Office : U/157D, Shakar Pur, Laxmi Nagar,Delhi-110092" />
+
+
+
+
+
+            </LinearLayout>
+
+    </LinearLayout>
+    </ScrollView>
+
+
+
+</RelativeLayout>

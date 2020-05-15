@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".allactivity.LoginActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:isScrollContainer="false"
+        android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="vertical"
+                                android:layout_margin="20dp"
+                                android:layout_height="wrap_content">
+
+
+
+
+                                               <TextView
+                                                   android:gravity="center"
+                                                   android:layout_width="match_parent"
+                                                   android:layout_height="wrap_content"
+                                                   android:textSize="@dimen/margin_20"
+                                                   android:textStyle="bold"
+                                                   android:textColor="@color/black"
+                                                   android:layout_marginTop="20dp"
+                                                   android:text="Service expert at your home"/>
+
+                                                <TextView
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:gravity="center"
+                                                    android:textColor="@color/black"
+                                                    android:text="Affordable,Dedicated,Verified"/>
+
+                                          <android.support.design.widget.TextInputLayout
+                                                app:hintTextAppearance="@style/TextAppearence.App.TextInputLayout"
+                                                android:layout_width="match_parent"
+                                                android:textColorHint="@color/gray3"
+                                                android:id="@+id/tv_mobilenumber"
+                                                app:errorEnabled="true"
+                                                android:layout_height="match_parent"
+                                                android:layout_marginTop="@dimen/margin_20">
+
+                                                <EditText
+                                                    android:theme="@style/StyledTilEditTextTheme"
+                                                    android:maxLength="40"
+                                                    android:imeOptions="actionNext"
+                                                    android:singleLine="true"
+                                                    android:drawablePadding="5dp"
+                                                    android:textSize="@dimen/margin_15"
+                                                    android:id="@+id/et_mobile"
+                                                    android:drawableLeft="@drawable/ic_phone_android_black_24dp"
+                                                    android:layout_width="match_parent"
+                                                    android:nextFocusDown="@+id/et_password"
+                                                    android:inputType="number"
+                                                    android:layout_height="wrap_content"
+                                                    android:textColorHint="@color/gray3"
+                                                    android:hint="Mobile Number" />
+
+                                </android.support.design.widget.TextInputLayout>
+
+                                  <android.support.design.widget.TextInputLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:textColorHint="@color/gray3"
+                                    android:id="@+id/et_passs"
+                                    app:errorEnabled="true"
+                                    android:layout_marginBottom="@dimen/margin_10"
+                                    app:passwordToggleEnabled="true"
+                                    app:passwordToggleTint="@color/black"
+                                    app:hintTextAppearance="@style/TextAppearence.App.TextInputLayout">
+
+                                    <EditText
+                                        android:theme="@style/StyledTilEditTextTheme"
+                                        android:maxLength="15"
+                                        android:imeOptions="actionDone"
+                                        android:textSize="@dimen/margin_15"
+                                        android:drawablePadding="5dp"
+                                        android:drawableStart="@drawable/ic_https_black_24dp"
+                                        android:id="@+id/et_password"
+                                        android:layout_width="match_parent"
+                                        android:inputType="textPassword"
+                                        android:textColorHint="@color/gray3"
+                                        android:padding="5dp"
+                                        android:paddingBottom="10dp"
+                                        android:layout_height="wrap_content"
+                                        android:hint="Password"
+                                        android:drawableLeft="@drawable/ic_https_black_24dp" />
+
+
+                                </android.support.design.widget.TextInputLayout>
+
+                                                <custom.RainbowTextView
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="@dimen/margin_45"
+                                                    android:text="Login"
+                                                    android:layout_gravity="center"
+                                                    android:gravity="center"
+                                                    android:textColor="@color/colorWhite"
+                                                    android:textSize="15dp"
+                                                    android:layout_marginRight="@dimen/margin_60"
+                                                    android:layout_marginLeft="@dimen/margin_60"
+                                                    android:id="@+id/bt_Login"
+                                                    android:background="@drawable/buttonstyle3"
+                                                    android:layout_marginBottom="10dp"
+                                                    android:layout_marginTop="10dp"
+                                                    android:textAllCaps="false" />
+
+                                                <custom.RainbowTextView
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="@dimen/margin_45"
+                                                    android:text="Skip"
+                                                    android:layout_marginRight="@dimen/margin_60"
+                                                    android:layout_marginLeft="@dimen/margin_60"
+                                                    android:layout_gravity="center"
+                                                    android:gravity="center"
+                                                    android:textSize="@dimen/margin_15"
+                                                    android:id="@+id/bt_skip"
+                                                    android:textColor="@color/colorWhite"
+                                                    android:background="@drawable/buttonstyle3"
+                                                    android:layout_marginBottom="@dimen/margin_10"
+                                                    android:layout_marginTop="@dimen/margin_10"
+                                                    android:textAllCaps="false"
+                                                   />
+
+                                                <LinearLayout
+                                                    android:layout_width="match_parent"
+                                                    android:orientation="vertical"
+                                                    android:layout_height="wrap_content">
+                                                    <LinearLayout
+                                                        android:layout_width="match_parent"
+                                                        android:orientation="vertical"
+                                                        android:layout_height="wrap_content">
+                                                        <TextView
+                                                            android:layout_width="match_parent"
+                                                            android:layout_weight="1"
+                                                            android:id="@+id/tv_forgotpass"
+                                                            android:layout_marginTop="10dp"
+                                                            android:layout_gravity="center"
+                                                            android:gravity="center"
+                                                            android:visibility="gone"
+                                                            android:text="Forgot Password? "
+                                                            android:textColor="@color/colorPrimary"
+                                                            android:layout_height="wrap_content" />
+
+                                                        <TextView
+                                                            android:layout_width="match_parent"
+                                                            android:layout_marginTop="10dp"
+                                                            android:layout_gravity="center"
+                                                            android:gravity="center"
+                                                            android:id="@+id/tv_createaccount"
+                                                            android:layout_weight="1"
+                                                            android:text="Dont' have an account? Register Here"
+                                                            android:textColor="@color/colorPrimary"
+                                                            android:layout_height="wrap_content" />
+
+
+                                                    </LinearLayout>
+
+
+
+
+
+                                    </LinearLayout>
+
+                                </LinearLayout>
+
+                      </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+
+
+
